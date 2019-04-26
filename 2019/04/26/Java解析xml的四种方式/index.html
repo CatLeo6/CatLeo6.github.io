@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Java,xml,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="毛哥的个人博客">
-<meta name="keywords" content="java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="王大毛">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="XML是一种通用的数据交换格式,它的平台无关性、语言无关性、系统无关性、给数据集成与交互带来了极大的方便。XML在不同的语言环境中解析方式都是一样的,只不过实现的语法不同而已。 　　XML的解析方式分为四种：1、DOM解析；2、SAX解析；3、JDOM解析；4、DOM4J解析。其中前两种属于基础方法，是官方提供的平台无关的解析方式；后两种属于扩展方法，它们是在基础的方法上扩展出来的，只适用于jav">
+<meta name="keywords" content="Java,xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java解析xml的四种方式">
+<meta property="og:url" content="http://yoursite.com/2019/04/26/Java解析xml的四种方式/index.html">
 <meta property="og:site_name" content="王大毛">
-<meta property="og:description" content="毛哥的个人博客">
+<meta property="og:description" content="XML是一种通用的数据交换格式,它的平台无关性、语言无关性、系统无关性、给数据集成与交互带来了极大的方便。XML在不同的语言环境中解析方式都是一样的,只不过实现的语法不同而已。 　　XML的解析方式分为四种：1、DOM解析；2、SAX解析；3、JDOM解析；4、DOM4J解析。其中前两种属于基础方法，是官方提供的平台无关的解析方式；后两种属于扩展方法，它们是在基础的方法上扩展出来的，只适用于jav">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-26T07:12:58.065Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="王大毛">
-<meta name="twitter:description" content="毛哥的个人博客">
+<meta name="twitter:title" content="Java解析xml的四种方式">
+<meta name="twitter:description" content="XML是一种通用的数据交换格式,它的平台无关性、语言无关性、系统无关性、给数据集成与交互带来了极大的方便。XML在不同的语言环境中解析方式都是一样的,只不过实现的语法不同而已。 　　XML的解析方式分为四种：1、DOM解析；2、SAX解析；3、JDOM解析；4、DOM4J解析。其中前两种属于基础方法，是官方提供的平台无关的解析方式；后两种属于扩展方法，它们是在基础的方法上扩展出来的，只适用于jav">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/26/Java解析xml的四种方式/">
 
 
 
 
 
-  <title>王大毛</title>
+  <title>Java解析xml的四种方式 | 王大毛</title>
   
 
 
@@ -144,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -248,9 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -280,9 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/26/Java解析xml的四种方式/" itemprop="url">Java解析xml的四种方式</a></h1>
+          <h1 class="post-title" itemprop="name headline">Java解析xml的四种方式</h1>
         
 
         <div class="post-meta">
@@ -354,9 +352,7 @@
       
 
       
-        
-          
-            <p>XML是一种通用的数据交换格式,它的平台无关性、语言无关性、系统无关性、给数据集成与交互带来了极大的方便。XML在不同的语言环境中解析方式都是一样的,只不过实现的语法不同而已。</p>
+        <p>XML是一种通用的数据交换格式,它的平台无关性、语言无关性、系统无关性、给数据集成与交互带来了极大的方便。XML在不同的语言环境中解析方式都是一样的,只不过实现的语法不同而已。</p>
 <p>　　XML的解析方式分为四种：1、DOM解析；2、SAX解析；3、JDOM解析；4、DOM4J解析。其中前两种属于基础方法，是官方提供的平台无关的解析方式；后两种属于扩展方法，它们是在基础的方法上扩展出来的，只适用于java平台。</p>
 <p>　　针对以下XML文件，会对四种方式进行详细描述：<br>　<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;bookstore&gt;</span><br><span class="line">    &lt;book id=&quot;1&quot;&gt;</span><br><span class="line">        &lt;name&gt;冰与火之歌&lt;/name&gt;</span><br><span class="line">        &lt;author&gt;乔治马丁&lt;/author&gt;</span><br><span class="line">        &lt;year&gt;2014&lt;/year&gt;</span><br><span class="line">        &lt;price&gt;89&lt;/price&gt;</span><br><span class="line">    &lt;/book&gt;</span><br><span class="line">    &lt;book id=&quot;2&quot;&gt;</span><br><span class="line">        &lt;name&gt;安徒生童话&lt;/name&gt;</span><br><span class="line">        &lt;year&gt;2004&lt;/year&gt;</span><br><span class="line">        &lt;price&gt;77&lt;/price&gt;</span><br><span class="line">        &lt;language&gt;English&lt;/language&gt;</span><br><span class="line">    &lt;/book&gt;    </span><br><span class="line">&lt;/bookstore&gt;</span><br></pre></td></tr></table></figure></p>
 <h2 id="一、DOM解析"><a href="#一、DOM解析" class="headerlink" title="一、DOM解析"></a>一、DOM解析</h2><p>DOM的全称是Document Object Model，也即文档对象模型。在应用程序中，基于DOM的XML分析器将一个XML文档转换成一个对象模型的集合（通常称DOM树），应用程序正是通过对这个对象模型的操作，来实现对XML文档数据的操作。通过DOM接口，应用程序可以在任何时候访问XML文档中的任何一部分数据，因此，这种利用DOM接口的机制也被称作随机访问机制。</p>
@@ -391,8 +387,6 @@
 <h3 id="Final：比较总结"><a href="#Final：比较总结" class="headerlink" title="Final：比较总结"></a>Final：比较总结</h3><p>　　DOM4J性能最好，连Sun的JAXM也在用DOM4J。目前许多开源项目中大量采用DOM4J，例如大名鼎鼎的Hibernate也用DOM4J来读取XML配置文件。如果不考虑可移植性，那就采用DOM4J。<br>      JDOM和DOM在性能测试时表现不佳，在测试10M文档时内存溢出。在小文档情况下还值得考虑使用DOM和JDOM。虽然JDOM的开发者已经说明他们期望在正式发行版前专注性能问题，但是从性能观点来看，它确实没有值得推荐之处。另外，DOM仍是一个非常好的选择。DOM实现广泛应用于多种编程语言。它还是许多其它与XML相关的标准的基础，因为它正式获得W3C推荐（与基于非标准的Java模型相对），所以在某些类型的项目中可能也需要它（如在JavaScript中使用DOM）。<br>      SAX表现较好，这要依赖于它特定的解析方式－事件驱动。一个SAX检测即将到来的XML流，但并没有载入到内存（当然当XML流被读入时，会有部分文档暂时隐藏在内存中）。</p>
 <p>转载：<a href="https://www.cnblogs.com/longqingyang/p/5577937.html" target="_blank" rel="noopener">龍清扬</a></p>
 
-          
-        
       
     </div>
     
@@ -407,257 +401,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/16/第一篇/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Leo Wang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoYjAujiaWkNPL8SW0hMNibOdAXQ5KsG6LfkyeTlDBHrVkuxPpUxictUSkfIWWFGUG6wSDullyOZ4hUQ/132">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王大毛">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/16/第一篇/" itemprop="url">第一篇--起始篇</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-16T10:37:23+08:00">
-                2019-04-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Java/" rel="tag"># Java</a>
           
-            
+            <a href="/tags/xml/" rel="tag"># xml</a>
           
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>早就想建立自己的博客，记录一些日常生活和代码历程。这次在<a href="https://www.boris1993.com/" target="_blank" rel="noopener">包哥Boris</a> 的帮助下历经两天终于搭好了一个框架。后面会持续更新。</p>
-<h2 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h2><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>知乎: <a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">GitHub+Hexo 搭建个人网站详细教程</a></p>
-<p>CSDN: <a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">hexo史上最全搭建教程</a></p>
-<h3 id="搭建过程中遇到的坑"><a href="#搭建过程中遇到的坑" class="headerlink" title="搭建过程中遇到的坑"></a>搭建过程中遇到的坑</h3><p>在配置站点文件_config.yml时，所有的配置项冒号后面加空格才能生效<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/CatLeo6/CatLeo6.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/15/起始篇/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Leo Wang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoYjAujiaWkNPL8SW0hMNibOdAXQ5KsG6LfkyeTlDBHrVkuxPpUxictUSkfIWWFGUG6wSDullyOZ4hUQ/132">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王大毛">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/15/起始篇/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-15T11:30:15+08:00">
-                2019-04-15
-              </time>
+              <a href="/2019/04/16/第一篇/" rel="next" title="第一篇--起始篇">
+                <i class="fa fa-chevron-left"></i> 第一篇--起始篇
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -667,10 +442,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -678,6 +454,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -698,8 +478,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -761,6 +550,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、DOM解析"><span class="nav-number">1.</span> <span class="nav-text">一、DOM解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、SAX解析"><span class="nav-number">2.</span> <span class="nav-text">二、SAX解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、JDOM解析"><span class="nav-number">3.</span> <span class="nav-text">三、JDOM解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、DOM4J解析"><span class="nav-number">4.</span> <span class="nav-text">4、DOM4J解析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Final：比较总结"><span class="nav-number">4.1.</span> <span class="nav-text">Final：比较总结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -901,6 +706,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
